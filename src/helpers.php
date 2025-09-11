@@ -61,7 +61,7 @@ if (! function_exists('encode_varint')) {
 }
 
 if (! function_exists('bskyFacade')) {
-    function bskyFacade(\Atproto\Client $client = null): \Atproto\BskyFacade
+    function bskyFacade(?\Atproto\Client $client = null): \Atproto\BskyFacade
     {
         return BskyFacade::getInstance($client);
     }
